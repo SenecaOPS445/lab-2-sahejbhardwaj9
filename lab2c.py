@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import sys
+
+def main():
+    if len(sys.argv) != 3:
+        print("Usage: lab2c.py <name> <age>")
+        sys.exit(1)  # Exit with return code 1 for error
+
+    name = sys.argv[1]
+    age = sys.argv[2]
+
+    print(f"Hi {name}, you are {age} years old.")
+
+if __name__ == "__main__":
+    main()
